@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Generator Gratis untuk URL, Teks, dan Link Lamaran</title>
+  <meta name="description" content="Buat QR code gratis dengan tampilan luwes untuk URL, teks promosi, link portfolio, dan tautan lamaran kerja." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="QR Generator Gratis untuk URL, Teks, dan Link Lamaran" />
+  <meta property="og:description" content="Buat QR code gratis dengan tampilan luwes untuk URL, teks promosi, link portfolio, dan tautan lamaran kerja." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://example.com/qr.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img class="logo-bag" src="logo-koper.svg" alt="Logo koper">
+      <span>JobStreet Finder ID</span>
+    </a>
+    <nav class="menu" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a><a href="qr.html" class="active">QR Generator</a><a href="walikan.html">Walikan</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="breadcrumbs"><a href="index.html">Beranda</a><span>•</span><span>QR Generator</span></div>
+        <div class="section-head"><div><h1>QR Generator gratis dengan tampilan lebih luwes</h1><p class="section-lead">Buat QR code untuk URL, teks promosi, nomor WhatsApp, bio link, dan tautan lamaran kerja.</p></div></div>
+        <div class="qr-layout">
+          <article class="panel card">
+            <label for="qrText"><strong>Isi QR</strong></label>
+            <textarea id="qrText" rows="6" placeholder="Tempel URL, teks promo, nomor WhatsApp, link portfolio, atau apapun..."></textarea>
+            <div class="color-row" style="margin-top:14px;">
+              <div><label for="qrDark"><strong>Warna utama</strong></label><input type="color" id="qrDark" value="#0f172a" /></div>
+              <div><label for="qrLight"><strong>Warna latar</strong></label><input type="color" id="qrLight" value="#ffffff" /></div>
+            </div>
+            <div class="button-row" style="margin-top:16px;">
+              <button class="btn btn-primary" type="button" onclick="generateQr()">Generate QR</button>
+              <button class="btn btn-secondary" type="button" onclick="downloadQr('png')">Download PNG</button>
+              <button class="btn btn-secondary" type="button" onclick="downloadQr('jpeg')">Download JPEG</button>
+            </div>
+          </article>
+          <aside class="panel card">
+            <h2>Preview QR Code</h2>
+            <div class="qr-preview"><div id="qrcode"></div></div>
+            <div class="chip-list" style="margin-top:14px;"><a class="chip" href="index.html">Kembali ke beranda</a><a class="chip" href="walikan.html">Buka walikan</a></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p>QR generator ini dipecah jadi halaman tersendiri agar lebih fokus dan rapi.</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
